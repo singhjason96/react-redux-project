@@ -1,0 +1,36 @@
+.menu-item{
+    min-width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+
+   
+    .content{
+        height: 90px;
+        padding:0 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        background-color: #ffe6ff;
+        opacity: 0.7;
+        font-family: 'Neuton', serif;
+    }
+
+    .title{
+        font-weight: bold;
+        margin-bottom:6px;
+        font-size: 22px;
+        color: #ff80ff;
+        font-family: 'IBM Plex Serif', serif;
+    }
+
+    .subtitle{
+        font-weight: lighter;
+        font-size: 16px;
+        
+    }
+}
