@@ -10,7 +10,7 @@ class Directory extends React.Component {
             sections: [{
                 title: 'Hoodie Season',
                 id: 1,
-                linkURL: 'products'
+                linkURL: 'shop'
             },
             {
                 title: 'Cart',
