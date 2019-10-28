@@ -22,6 +22,15 @@ const SHOP_DATA = [
             "S", "M", "L", "XL"
           ]
         },
+        {
+          id: 3,
+          name: 'AI Cross Over',
+          imageUrl: 'img/aihoodie.png',
+          price: 50,
+          size: [
+            "S","M", "L", "XL"
+          ]
+        },
       ]
     },
     
