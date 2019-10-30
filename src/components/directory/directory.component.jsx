@@ -15,7 +15,7 @@ class Directory extends React.Component {
             {
                 title: 'Cart',
                 id: 2,
-                linkURL: '',
+                linkURL: 'checkout',
             }]
         }
     }
