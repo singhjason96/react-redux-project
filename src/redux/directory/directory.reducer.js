@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
     sections: [{
-        title: 'Hoodie Season',
+        title: 'The Shop',
         id: 1,
         linkURL: 'shop'
     },

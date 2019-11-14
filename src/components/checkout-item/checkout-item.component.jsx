@@ -2,10 +2,16 @@ import React from 'react';
 import './checkout-item.styles.scss';
 import { connect } from 'react-redux';
 import { clearItemFromCart, addItem, removeItem } from '../../redux/cart/cart.actions';
-
+import CollectionItem from '../collection-item/collection-item.component';
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+import SizeList from '../size-list/size-list.component';
 
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
     const {name, imageUrl,  price, quantity} = cartItem;
+    const options = ['S', 'M', 'L', 'XL'];
+    const defaultOption = options[0]
+    console.log(Dropdown.value);
     return (
     <div className="checkout-item">
         <div className="image-container">
@@ -18,6 +24,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
             <div className="arrow" onClick={() => addItem(cartItem)}>&#10095;</div>
         </span>
         <span className="price">${price}</span>
+       <SizeList />
         <div className="remove-button" onClick={()=> clearItem(cartItem)}>&#10005;</div>
     </div>
     );

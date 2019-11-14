@@ -1,0 +1,28 @@
+.select-box-arrow{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-color: #aaa;
+}
+
+.select-box-arrow-down{
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+.select-box-arrow-up{
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #fff;
+}

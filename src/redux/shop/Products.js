@@ -1,41 +1,58 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+    hoodies:{
       id: 1,
-      title: 'Products',
-      routeName: 'shop',
+      title: 'Hoodies',
+      routeName: '/hoodies',
+      items: [
+        {
+          id: 1,
+          name: 'The Crossover',
+          imageUrl: 'img/aihoodiered.png',
+          price: 50,
+        },
+        {
+          id: 2,
+          name: "Don't Give a Fuck",
+          imageUrl: 'img/bestpachoodie.png',
+          price: 50,
+        },
+        
+      ]
+    },
+    tees: {
+      id: 2,
+      title: 'Tees',
+      routeName: '/tees',
       items: [
         {
           id: 1,
           name: 'Fresh Prince Tee',
-          imageUrl: 'img/freshprincetee.png',
+          imageUrl: 'img/freshprinceteeshirt.png',
           price: 30,
-          size: [
-            "S", "M", "L", "XL"
-          ]
         },
         {
           id: 2,
-          name: 'RIP Uncle Phil',
-          imageUrl: 'img/UncPhilHoodie.png',
-          price: 50,
-          size: [
-            "S", "M", "L", "XL"
-          ]
+          name: 'TLC Shirt',
+          imageUrl: 'img/tlcshirt.png',
+          price: 30
         },
         {
           id: 3,
-          name: 'AI Cross Over',
-          imageUrl: 'img/aihoodie.png',
-          price: 50,
-          size: [
-            "S","M", "L", "XL"
-          ]
+          name: 'Romey Rome',
+          imageUrl: 'img/jeromeshirt.png',
+          price: 30,
         },
+        {
+          id: 4,
+          name: 'Proud Family',
+          imageUrl: 'img/proudfamilywhitetee.png',
+          price: 30,
+        }
       ]
-    },
+    }
     
     
     
-  ]
+}
   
   export default SHOP_DATA;
