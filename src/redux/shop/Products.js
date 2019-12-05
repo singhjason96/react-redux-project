@@ -10,12 +10,7 @@ const SHOP_DATA = {
           imageUrl: 'img/aihoodiered.png',
           price: 50,
         },
-        {
-          id: 2,
-          name: "Don't Give a Fuck",
-          imageUrl: 'img/bestpachoodie.png',
-          price: 50,
-        },
+        
         
       ]
     },
@@ -30,24 +25,7 @@ const SHOP_DATA = {
           imageUrl: 'img/freshprinceteeshirt.png',
           price: 30,
         },
-        {
-          id: 2,
-          name: 'TLC Shirt',
-          imageUrl: 'img/tlcshirt.png',
-          price: 30
-        },
-        {
-          id: 3,
-          name: 'Romey Rome',
-          imageUrl: 'img/jeromeshirt.png',
-          price: 30,
-        },
-        {
-          id: 4,
-          name: 'Proud Family',
-          imageUrl: 'img/proudfamilywhitetee.png',
-          price: 30,
-        }
+        
       ]
     }
     

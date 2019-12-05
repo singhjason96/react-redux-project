@@ -4,20 +4,21 @@ import 'firebase/auth';
 
 
 const config = {
-    apiKey: "AIzaSyDelfHH26CbBLTMVWDX6Duz-_YcNyrYhFo",
-    authDomain: "clothing-store-165f7.firebaseapp.com",
-    databaseURL: "https://clothing-store-165f7.firebaseio.com",
-    projectId: "clothing-store-165f7",
-    storageBucket: "clothing-store-165f7.appspot.com",
-    messagingSenderId: "1077638477127",
-    appId: "1:1077638477127:web:0682b2276fb8b1dce44862",
-    measurementId: "G-4H2SW6ZCH2"
-  };
+  apiKey: "AIzaSyAJH5bjeJDppH-LI4d8Lzan9ln1PKe0K2E",
+  authDomain: "clothing-prod.firebaseapp.com",
+  databaseURL: "https://clothing-prod.firebaseio.com",
+  projectId: "clothing-prod",
+  storageBucket: "clothing-prod.appspot.com",
+  messagingSenderId: "588706160552",
+  appId: "1:588706160552:web:93cf6cdb227ee3b8f2479d",
+  measurementId: "G-1XFFKB3CB3"
+};
 
   export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
     const userRef = firestore.doc(`users/${userAuth.uid}`);
     const snapShot = userRef.get();
+ 
 
     if(!snapShot.exists) {
       const { displayName, email} = userAuth;
@@ -39,6 +40,17 @@ const config = {
       }
     }
     return userRef;
+  }
+
+  export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+    const collectionRef = firestore.collection(collectionKey);
+    const batch = firestore.batch();
+    objectsToAdd.forEach(obj => {
+      const newDocRef = collectionRef.doc();
+      batch.set(newDocRef, obj);
+    })
+
+    return await batch.commit()
   }
 
   firebase.initializeApp(config);
