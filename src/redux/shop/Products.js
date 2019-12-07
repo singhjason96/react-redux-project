@@ -20,7 +20,7 @@ const SHOP_DATA = {
       routeName: '/tees',
       items: [
         {
-          id: 1,
+          id: 2,
           name: 'Fresh Prince Tee',
           imageUrl: 'img/freshprinceteeshirt.png',
           price: 30,
